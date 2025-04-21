@@ -182,13 +182,22 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-### 5 responsabilités du développeur back-end
+### 5 Responsibilities of the Back-end Developer
 
-1. **Configurer le serveur Express** : Mettre en place un serveur robuste avec Express.js, intégrant des middlewares pour la sécurité (helmet), la gestion des CORS, et le parsing JSON.
-2. **Gérer la connexion MongoDB** : Établir une connexion fiable avec MongoDB Atlas pour stocker les posts programmés et les préférences utilisateur.
-3. **Développer les routes API** : Créer des endpoints pour la génération de contenu, la personnalisation et la programmation des posts, en respectant les spécifications du PRD.
-4. **Intégrer l'API Gemini** : Implémenter la logique de génération de contenu via l'API Gemini, en s'assurant que les prompts sont optimisés pour les profils utilisateurs.
-5. **Assurer la sécurité des données** : Mettre en œuvre des pratiques de sécurité (par exemple, chiffrement des données sensibles, validation des entrées) pour protéger les informations des utilisateurs.
+1. **Configure the Express server**
+   Set up a robust server with Express.js, integrating middlewares for security (helmet), CORS management, and JSON parsing.
+
+2. **Manage MongoDB connection**
+   Establish a reliable connection with MongoDB Atlas to store scheduled posts and user preferences.
+
+3. **Develop API routes**
+   Create endpoints for content generation, personalization, and post scheduling, adhering to the PRD specifications.
+
+4. **Integrate the Gemini API**
+   Implement content generation logic via the Gemini API, ensuring prompts are optimized for user profiles.
+
+5. **Ensure data security**
+   Implement security practices (e.g., encryption of sensitive data, input validation) to protect user information.
 
 ### 5.2 Content Generation API
 
