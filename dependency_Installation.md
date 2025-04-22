@@ -342,10 +342,10 @@ npm install --save-dev css-loader style-loader html-webpack-plugin copy-webpack-
 
 ```bash
 # Install React and related packages
-npm install react react-dom react-router-dom
+npm install react@18.2.0 react-dom@18.2.0 react-router-dom
 
 # Install UI component libraries
-npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material@5.14.15 @emotion/react@11.11.1 @emotion/styled@11.11.0
 
 # Install icons
 npm install @mui/icons-material

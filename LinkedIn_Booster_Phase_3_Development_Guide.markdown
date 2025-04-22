@@ -40,7 +40,7 @@ Ensure the following are set up from Phases 1 and 2:
 - **Node.js** (v16.x or later) and **npm** (v8.x or later).
 - **Git** repository in the `linkedin-booster` directory.
 - **Chrome Browser** for extension testing.
-- **Code Editor** (e.g., VS Code).
+- **Code Editor** .
 - **Phase 2 Dependencies** installed (React, TypeScript, Webpack, Express, MongoDB, Gemini API client, etc.).
 - **Gemini API Key**, **MongoDB URI**, and **LinkedIn API Credentials** in `.env`.
 - **LinkedIn Developer Account** with API access (LinkedIn API for posting and analytics).
@@ -98,13 +98,13 @@ Install the following:
 
 ```bash
 # LinkedIn API and analytics dependencies
-npm install axios @types/axios node-fetch
+npm install axios@1.8.4 @types/axios@0.9.36 node-fetch@3.3.2
 
-# Additional frontend dependencies
-npm install react-toastify
+# Frontend dependencies
+npm install react-toastify@9.1.3
 
 # Development dependencies
-npm install --save-dev @types/node-fetch jest-fetch-mock
+npm install --save-dev @types/node-fetch@3.0.3 jest-fetch-mock@3.0.3
 ```
 
 Update `package.json` scripts to include new testing and build commands:
