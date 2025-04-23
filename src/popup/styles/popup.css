@@ -1,0 +1,254 @@
+/* LinkedIn Booster Popup Styles */
+
+:root {
+  --linkedin-blue: #0077b5;
+  --linkedin-light-blue: #0a66c2;
+  --linkedin-dark-blue: #004471;
+  --light-gray: #f3f2ef;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #666666;
+  --text-color: #333333;
+  --success-green: #057642;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: var(--dark-gray);
+}
+
+/* Header Styles */
+.app-header {
+  background-color: var(--linkedin-blue);
+  color: white;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--linkedin-dark-blue);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-info {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.user-info p {
+  margin: 2px 0;
+}
+
+/* Content Section */
+.content-section {
+  padding: 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.refresh-button {
+  background-color: var(--linkedin-light-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: var(--linkedin-dark-blue);
+}
+
+.refresh-button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+/* Ideas List */
+.ideas-container {
+  margin-bottom: 20px;
+}
+
+.ideas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+}
+
+.ideas-list li {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--medium-gray);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ideas-list li:last-child {
+  border-bottom: none;
+}
+
+.ideas-list li:hover {
+  background-color: var(--light-gray);
+}
+
+.ideas-list li.selected-idea {
+  background-color: rgba(0, 119, 181, 0.1);
+  border-left: 3px solid var(--linkedin-blue);
+}
+
+/* Post Generator */
+.post-generator {
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.post-generator h3 {
+  font-size: 14px;
+  margin: 0 0 12px 0;
+}
+
+.customization-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.option-group {
+  flex: 1;
+  min-width: 100px;
+}
+
+.option-group label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: var(--dark-gray);
+}
+
+.option-group select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.generate-button {
+  background-color: var(--linkedin-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.generate-button:hover {
+  background-color: var(--linkedin-dark-blue);
+}
+
+.generate-button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+/* Post Preview */
+.post-preview {
+  margin-top: 20px;
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+  font-size: 13px;
+  resize: vertical;
+  min-height: 150px;
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+
+.schedule-container {
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid var(--medium-gray);
+}
+
+.schedule-container h4 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.date-picker-container {
+  margin-bottom: 12px;
+}
+
+.date-picker-container label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: var(--dark-gray);
+}
+
+.date-picker {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.schedule-button {
+  background-color: var(--success-green);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.schedule-button:hover {
+  background-color: #046235;
+}

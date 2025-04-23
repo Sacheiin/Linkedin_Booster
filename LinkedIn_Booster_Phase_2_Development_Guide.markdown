@@ -123,7 +123,7 @@ npm install express@5.1.0 mongoose@6.4.6 dotenv@16.3.1 cors@2.8.5 express-rate-l
 npm install axios@1.8.4 date-fns@2.30.0 react-datepicker@4.25.0
 
 # Development dependencies
-npm install --save-dev @types/express@5.0.1 @types/cors@2.8.13 @types/jest@29.5.14 ts-node@10.9.2 nodemon@3.0.2 concurrently@9.1.2
+npm install --save-dev jest-webextension-mock @types/express@5.0.1 @types/cors@2.8.13 @types/jest@29.5.14 ts-node@10.9.2 nodemon@3.0.2 concurrently@9.1.2
 ```
 
 Update `package.json` scripts to include backend and concurrent development:
@@ -869,7 +869,11 @@ Steps:
   - Integrate LinkedIn API for posting and analytics retrieval.
 - **Enhancements**:
   - Add user authentication (OAuth 2.0 with LinkedIn).
-  - Implement a cron job for scheduled posting.
+  - Implement Firebase-based solutions for:
+    - Secure API key management
+    - Rate limiting enforcement
+    - Cloud scheduled tasks
+    - Email notification triggers
   - Enhance content suggestion algorithm with real-time trend data.
 - **Testing**:
   - Conduct user testing with real LinkedIn profiles.
